@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+/* styling header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 25px 25px;
+  margin-bottom: 10px;
+  /* background-color: rgb(253, 117, 149); */
+  background-color: rgb(184, 164, 11);
+  /* width: 100%; */
+  position: sticky;
+  top: 0;
+}
+.web--logo {
+  height: 40px;
+}
+nav li {
+  display: inline;
+  padding: 25px 15px;
+  margin-left: 5rem;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ****************************  */
+@media screen and (max-width: 850px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: rgb(184, 164, 11);
+  }
+
+  button {
+    visibility: hidden;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  nav li {
+    display: inline-block;
+    padding: 25px -10px;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  nav {
+    display: none;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #dummy--photo {
+    height: 50px;
+  }
+  #trigram {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+  }
+}
+
+/* Styling main section */
+
+/* styling about/portfolio/ description  section*/
+#about--desc {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.about--text h2 {
+  /* display: flex;
+  align-self: center;
+  justify-content: center; */
+  padding-bottom: 10px;
+}
+#dummy--photo {
+  height: 450px;
+  width: 500px;
+  border-radius: 70%;
+}
+
+button {
+  padding: 10px;
+  border: 5px;
+  border-radius: 50px;
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 40px;
+  color: rgb(241, 230, 226);
+  background-color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  #about--desc {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: centr;
+  }
+  .about--text h2 {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/* ******************************** */
+
+/* styling resume section */
+#resume--sect {
+  box-shadow: -16px -21px 50px -10px rgba(57, 37, 37, 0.76);
+  -webkit-box-shadow: -16px -21px 50px -10px rgba(50, 33, 33, 0.76);
+  -moz-box-shadow: -16px -21px 50px -10px rgba(0, 0, 0, 0.76);
+  border: 10px;
+  margin-top: -20px;
+  border-bottom: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#resume--sect h2 {
+  text-align: center;
+  color: rgb(141, 19, 19);
+  align-self: center;
+  padding: 5px;
+}
+
+/* styling contact section */
+#contact--sect {
+  padding: 20px;
+}
+#contact--sect h2 {
+  text-align: center;
+  color: rgb(141, 19, 19);
+  align-self: center;
+  padding: 10px;
+}
+
+#emb-video {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* styling footer */
+footer {
+  text-align: center;
+  font-size: small;
+  margin-top: 20px;
+  background-color: rgb(184, 164, 11);
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+}
+@media screen and (max-width: 640px) {
+  footer {
+    font-size: x-small;
+  }
+}
